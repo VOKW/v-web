@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="./css/styles_pixel.css">
+</head>
+<body>
+    <div class="page">
+      <div class="Section1">
+        <h3>Pixel Art Maker</h3>
+      </div>
+
+      <div class="Section2">
+        <h2>Choose Canvas Size</h2>
+        <form id="sizePicker">
+            Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1">
+            Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="1">
+        
+            <!--Buttons for drawing and clearing canvas.-->
+            <input type="submit" id=bSubmit value="Draw Canvas">
+            <input type="submit" id=bClearCanvas value="Clear Canvas">
+        </form>
+      </div>
+
+      <div class="Section3">
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+      </div>
+
+      <div class="Section4">
+        <h2>Your Canvas</h2>
+        <table id="pixelCanvas"></table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="designs.js"></script>
+      </div>
+
+    </div>
+</body>
+</html>
